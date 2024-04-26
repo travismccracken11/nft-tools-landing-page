@@ -19,7 +19,8 @@
  */
 export const dictionary = {
   title: 'Tools Landing Page',
-  description: 'tools landing page description',
+  description:
+    "Explore tools designed to streamline your interactions with the Hedera network! This page serves as a gateway to various applications we've developed to analyze, validate, and manage data related to blockchain and NFTs. Each tool is tailored to simplify specific tasks, making your blockchain management more efficient and accessible.",
   pages: {
     tokenBalanceSnapshot: 'Token Balance Snapshot',
     metadataValidator: 'Metadata Validator',

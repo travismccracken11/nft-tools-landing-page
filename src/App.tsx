@@ -25,13 +25,19 @@ import { pages } from '@/utils/constants/pages';
 const App = () => {
   return (
     <Layout>
-      <h1 className="mt-20 scroll-m-20 text-center text-[28px] font-extrabold tracking-tight sm:text-4xl md:text-5xl">{dictionary.title}</h1>
-      <p className="mb-6 text-center text-[12px] leading-7 sm:text-[14px] md:text-[16px] [&:not(:first-child)]:mt-6">{dictionary.description}</p>
-      <div className="mt-16 flex flex-col gap-6">
+      <div className="mx-auto max-w-[1000px] px-4">
+        <h1 className="mt-6 scroll-m-20 text-center text-[28px] font-extrabold tracking-tight sm:mt-20 sm:text-4xl md:text-5xl">
+          {dictionary.title}
+        </h1>
+        <p className="text-center text-[12px] leading-7 sm:text-[14px] md:text-[16px] [&:not(:first-child)]:mt-6">{dictionary.description}</p>
+      </div>
+      <div className="mx-auto mt-10 flex flex-col justify-center gap-6 text-center sm:mt-16">
         {pages.map(({ name, url }) => (
-          <div key={name} className="mx-auto">
+          <div key={name} className="mx-auto w-full px-4">
             <a href={url} target="_blank" rel="noreferrer">
-              <Button className="w-[500px] py-8 text-lg transition duration-200 hover:scale-105">{name}</Button>
+              <Button className="w-full py-6 text-[12px] transition duration-200 hover:scale-105 sm:mx-auto sm:w-[500px] sm:py-8 sm:text-[14px] md:text-[16px]">
+                {name}
+              </Button>
             </a>
           </div>
         ))}

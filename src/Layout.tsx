@@ -22,5 +22,5 @@ interface RootLayoutProps {
 }
 
 export const Layout = ({ children }: RootLayoutProps) => {
-  return <div>{children}</div>;
+  return <div className="pb-6">{children}</div>;
 };
